@@ -96,6 +96,7 @@ const CurrencyConverter = () => {
           value={amount}
           onChange={(e) => setAmount(e.target.value)}
           type="number"
+          required
           className="input"
         />
       </div>
@@ -103,6 +104,7 @@ const CurrencyConverter = () => {
       <div className="flex justify-end mt-6">
         <button
           onClick={convertCurrency}
+          required
           className={`convert-button ${converting ? "loading" : ""}`}
         >
           Convert

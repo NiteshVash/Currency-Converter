@@ -1,0 +1,24 @@
+.Navbar {
+  height: 3rem;
+  width: 100vw;
+  max-width: 75rem;
+  margin: 0 auto;
+  padding: 1rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  background-color: #4277eb;
+  z-index: 3;
+}
+
+.h2 {
+  color: white;
+  font-size: 40px;
+  font-weight: 600;
+
+}

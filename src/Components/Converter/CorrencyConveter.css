@@ -2,11 +2,13 @@
 .currency-converter {
   max-width: 400px;
   margin: auto;
-  background: #1e1e2e;
+  background: #ffffff;
+  /* Match the background color of the navbar and footer */
   padding: 20px;
   border-radius: 12px;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
-  color: #fff;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  /* Match the box-shadow of the navbar and footer */
+  color: #292929;
   text-align: center;
   font-family: 'Poppins', sans-serif;
 }
@@ -14,7 +16,7 @@
 h2 {
   font-size: 1.5rem;
   margin-bottom: 20px;
-  color: #00ffcc;
+  color: #292929;
 }
 
 .grid-container {
@@ -31,7 +33,7 @@ h2 {
 }
 
 .swap-button {
-  background: #00ffcc;
+  background: #4277eb;
   border: none;
   padding: 10px;
   border-radius: 50%;
@@ -40,11 +42,11 @@ h2 {
 }
 
 .swap-button:hover {
-  background: #00cca3;
+  cursor: pointer;
 }
 
 .swap-icon {
-  color: #1e1e2e;
+  color: #ffffff;
   font-size: 1.2rem;
 }
 
@@ -56,6 +58,7 @@ h2 {
 
 .input {
   width: 95%;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
   padding: 8px;
   margin-top: 5px;
   border-radius: 8px;
@@ -64,7 +67,7 @@ h2 {
 }
 
 .convert-button {
-  background: #00ffcc;
+  background: #4277eb;
   padding: 12px;
   width: 100%;
   border-radius: 8px;
@@ -77,11 +80,12 @@ h2 {
 }
 
 .convert-button:hover {
-  background: #00cca3;
+  /* background: #00cca3; */
+  cursor: pointer;
 }
 
 .convert-button.loading {
-  opacity: 0.7;
+  opacity: 0.5;
   cursor: not-allowed;
 }
 
@@ -89,5 +93,49 @@ h2 {
   margin-top: 15px;
   font-size: 1.2rem;
   font-weight: bold;
-  color: #00ffcc;
+  color: #292929;
+}
+
+/* --- Tablet View --- */
+@media screen and (max-width: 768px) {
+  .currency-converter {
+    padding: 15px;
+  }
+
+  h2 {
+    font-size: 1.3rem;
+  }
+
+  .grid-container {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .input {
+    width: 100%;
+  }
+}
+
+/* --- Mobile View --- */
+@media screen and (max-width: 480px) {
+  .currency-converter {
+    padding: 10px;
+  }
+
+  h2 {
+    font-size: 1.1rem;
+  }
+
+  .input {
+    width: 100%;
+  }
+
+  .convert-button {
+    padding: 10px;
+    font-size: 0.9rem;
+  }
+
+  .converted-amount {
+    font-size: 1rem;
+  }
 }

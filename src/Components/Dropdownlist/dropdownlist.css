@@ -1,54 +1,54 @@
 /* CurrencyDropdown.css */
 .currency-dropdown {
-    margin-bottom: 1rem;
-  }
-  
-  .currency-label {
-    display: block;
-    font-size: 0.875rem;
-    font-weight: 500;
-    color: #4a5568;
-    margin-bottom: 0.25rem;
-  }
-  
-  .dropdown-container {
-    position: relative;
-  }
-  
-  .currency-select {
-    width: 100%;
-    padding: 0.5rem;
-    border: 1px solid #d1d5db;
-    border-radius: 0.375rem;
-    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
-    appearance: none;
-    background-color: white;
-    cursor: pointer;
-  }
-  
-  .currency-select:focus {
-    outline: none;
-    box-shadow: 0 0 0 2px rgba(99, 102, 241, 0.5);
-  }
-  
-  .favorite-button {
-    position: absolute;
-    /* inset-y: 0; */
-    right: 0;
-    padding-right: 1.25rem;
-    display: flex;
-    align-items: center;
-    font-size: 1rem;
-    cursor: pointer;
-    background: none;
-    border: none;
-    color: #4a5568;
-  }
-  
-  .favorite-button:hover {
-    color: #fbbf24;
-  }
-  
-  .favorite-icon {
-    font-size: 1.25rem;
-  }
+  margin-bottom: 1rem;
+}
+
+.currency-label {
+  display: block;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #4a5568;
+  margin-bottom: 0.25rem;
+}
+
+.dropdown-container {
+  position: relative;
+}
+
+.currency-select {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #d1d5db;
+  border-radius: 0.375rem;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+  appearance: none;
+  background-color: white;
+  cursor: pointer;
+}
+
+.currency-select:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(99, 102, 241, 0.5);
+}
+
+.favorite-button {
+  position: absolute;
+  /* inset-y: 0; */
+  right: 0;
+  padding-right: 1.25rem;
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+  cursor: pointer;
+  background: none;
+  border: none;
+  color: #4a5568;
+}
+
+.favorite-button:hover {
+  color: #fbbf24;
+}
+
+.favorite-icon {
+  font-size: 1.25rem;
+}
