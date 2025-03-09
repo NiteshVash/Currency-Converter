@@ -1,11 +1,11 @@
 import './App.css'
 import CurrencyConverter from './Components/Converter/CurrencyConverter'
-import Nvbar from './Components/Navbar/Nvbar'
+import Navbar from './Components/Navbar/Navbar'
 import Footer from './Components/Footer/Footer'
-import Abut from './Components/About/Abut'
+import About from './Components/About/About'
 import Uses from './Components/Uses/Uses'
 import { useEffect, useState } from 'react'
- 
+
 function App() {
   const [hash, setHash] = useState(window.location.hash);
 
@@ -24,7 +24,7 @@ function App() {
   const renderComponent = () => {
     switch (hash) {
       case '#/about':
-        return <Abut />;
+        return <About />;
       case '#/uses':
         return <Uses />;
       default:
@@ -34,7 +34,7 @@ function App() {
 
   return (
     <div className="app-container">
-      <Nvbar />
+      <Navbar />
       <div className="app-content">
         {renderComponent()}
       </div>
