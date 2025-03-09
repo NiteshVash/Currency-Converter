@@ -1,0 +1,160 @@
+/* Resume container */
+.about-converter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background-color: #ffffff;
+  padding: 20px;
+  min-height: calc(100vh - 100px); /* Adjust based on your header and footer height */
+}
+
+.about-h1 {
+  color: black;
+  text-align: center;
+}
+
+/* Inner container */
+.inner-container {
+  background-color: white;
+  padding: 20px;
+  max-width: 800px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 90%;
+  margin: 0 auto;
+  border: 1px solid #3b82f6;
+}
+
+/* Title */
+.it-p {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 16px;
+  color: #1e40af;
+}
+
+/* Subtitle */
+.subtitle {
+  text-align: center;
+  color: #4b5563;
+  margin-bottom: 16px;
+}
+
+/* Resume content */
+.resumeContent {
+  margin-top: 16px;
+  color: black;
+}
+
+/* Section titles */
+.sectionTitle {
+  font-size: 18px;
+  font-weight: 600;
+  color: #1e40af;
+  margin-top: 16px;
+}
+
+/* Lists */
+.list {
+  padding-left: 20px;
+  color: #374151;
+  list-style-type: disc;
+}
+
+/* List items */
+.list li {
+  margin-bottom: 6px;
+  line-height: 1.6;
+}
+
+/* Headings */
+h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #333;
+  text-align: center;
+}
+
+h2 {
+  font-size: 1.5rem;
+  margin-top: 20px;
+  color: #555;
+}
+
+p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #666;
+  text-align: center;
+}
+
+/* Lists */
+ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+ul li {
+  margin-bottom: 10px;
+  color: #666;
+}
+
+/* Links */
+a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* --- Tablet View --- */
+@media screen and (max-width: 768px) {
+  .inner-container {
+    padding: 15px;
+    width: 95%;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  h2 {
+    font-size: 1.3rem;
+  }
+
+  p {
+    font-size: 0.95rem;
+  }
+
+  ul li {
+    font-size: 0.95rem;
+  }
+}
+
+/* --- Mobile View --- */
+@media screen and (max-width: 480px) {
+  .inner-container {
+    padding: 12px;
+    width: 100%;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  h2 {
+    font-size: 1.2rem;
+  }
+
+  p {
+    font-size: 0.9rem;
+  }
+
+  ul li {
+    font-size: 0.9rem;
+  }
+}

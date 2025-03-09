@@ -1,5 +1,5 @@
 /* eslint-disable react/prop-types */
-import { HiOutlineStar, HiStar } from "react-icons/hi2";
+// import { HiOutlineStar, HiStar } from "react-icons/hi2";
 import "./dropdownlist.css"; // Import the new CSS file
 
 const CurrencyDropdown = ({
@@ -7,10 +7,10 @@ const CurrencyDropdown = ({
   currency,
   setCurrency,
   favorites,
-  handleFavorite,
+  // handleFavorite,
   title = "",
 }) => {
-  const isFavorite = (curr) => favorites.includes(curr);
+  // const isFavorite = (curr) => favorites.includes(curr);
 
   return (
     <div className="currency-dropdown">
@@ -39,9 +39,7 @@ const CurrencyDropdown = ({
             ))}
         </select>
 
-        <button onClick={() => handleFavorite(currency)} className="favorite-button">
-          {isFavorite(currency) ? <HiStar className="favorite-icon" /> : <HiOutlineStar className="favorite-icon" />}
-        </button>
+       
       </div>
     </div>
   );

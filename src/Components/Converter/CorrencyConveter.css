@@ -1,13 +1,12 @@
 /* Currency Converter Styling to Match Portfolio */
 .currency-converter {
-  max-width: 400px;
-  margin: auto;
-  background: #ffffff;
-  /* Match the background color of the navbar and footer */
+  width: 100%;
+  max-width: 35rem;
+  margin: 3rem auto;
+  background: #ffffff; 
   padding: 20px;
   border-radius: 12px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-  /* Match the box-shadow of the navbar and footer */
   color: #292929;
   text-align: center;
   font-family: 'Poppins', sans-serif;
@@ -24,6 +23,7 @@ h2 {
   align-items: center;
   justify-content: space-between;
   gap: 10px;
+  flex-wrap: wrap;
 }
 
 .swap-button-container {
@@ -35,14 +35,15 @@ h2 {
 .swap-button {
   background: #4277eb;
   border: none;
+  width: 100px;
   padding: 10px;
-  border-radius: 50%;
+  border-radius: 20px;
   cursor: pointer;
   transition: 0.3s;
 }
 
 .swap-button:hover {
-  cursor: pointer;
+  background: #355ac9;
 }
 
 .swap-icon {
@@ -67,21 +68,22 @@ h2 {
 }
 
 .convert-button {
-  background: #4277eb;
-  padding: 12px;
   width: 100%;
-  border-radius: 8px;
+  background-color: #4277eb;
+  color: white;
+  padding: 12px;
   border: none;
+  margin: 1rem 0;
+  border-radius: 8px;
   font-size: 1rem;
-  font-weight: bold;
   cursor: pointer;
-  transition: 0.3s;
-  margin-top: 15px;
+  transition: all 0.3s ease-in-out;
 }
 
 .convert-button:hover {
-  /* background: #00cca3; */
-  cursor: pointer;
+  background-color: white;
+  color: black;
+  border: 1px solid black;
 }
 
 .convert-button.loading {
@@ -96,6 +98,48 @@ h2 {
   color: #292929;
 }
 
+.converter-discription-c1 img {
+  height: 50px;
+  padding: 3px;
+  width: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.converter-discription-c1 h1 {
+  font-size: 2rem;
+  padding-top: 4px;
+  color: #4277eb;
+}
+
+.converter-discription-c1 {
+  padding: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.converter-description {
+  margin-bottom: 5px;
+  font-size: 1rem;
+  color: #666;
+  width: 90%;
+  max-width: 75rem;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.converter-description p {
+  margin: 0;
+  line-height: 1.6;
+  text-align: center;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 /* --- Tablet View --- */
 @media screen and (max-width: 768px) {
   .currency-converter {
@@ -108,11 +152,21 @@ h2 {
 
   .grid-container {
     flex-direction: column;
-    gap: 20px;
+    gap: 15px;
   }
 
   .input {
     width: 100%;
+  }
+
+  .convert-button {
+    font-size: 0.95rem;
+    padding: 10px;
+  }
+
+  .converter-description {
+    font-size: 0.95rem;
+    max-width: 90%;
   }
 }
 
@@ -120,14 +174,27 @@ h2 {
 @media screen and (max-width: 480px) {
   .currency-converter {
     padding: 10px;
+    margin: 2rem auto;
   }
 
   h2 {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
+  }
+
+  .grid-container {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .swap-button {
+    width: 80px;
+    padding: 8px;
   }
 
   .input {
     width: 100%;
+    font-size: 0.9rem;
+    padding: 8px;
   }
 
   .convert-button {
@@ -137,5 +204,20 @@ h2 {
 
   .converted-amount {
     font-size: 1rem;
+  }
+
+  .converter-discription-c1 img {
+    height: 50px;
+    width: 50px;
+  }
+
+  .converter-discription-c1 h1 {
+    font-size: 1.8rem;
+  }
+
+  .converter-description {
+    font-size: 0.9rem;
+    text-align: center;
+    max-width: 90%;
   }
 }

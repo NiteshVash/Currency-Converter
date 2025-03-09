@@ -6,7 +6,7 @@
   padding: 1rem 2rem;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
   position: sticky;
   top: 0;
@@ -16,9 +16,122 @@
   z-index: 3;
 }
 
-.h2 {
-  color: white;
-  font-size: 40px;
-  font-weight: 600;
+.Logo {
+  height: 2rem;
+  object-fit: cover;
+  border-radius: 20px;
+  width: 2rem;
+}
 
+.DesktopMenu {
+  display: flex;
+  gap: 2rem;
+}
+
+.DesktopMenuListItem {
+  cursor: pointer;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: white;
+  position: relative;
+}
+
+.DesktopMenuListItem:hover {
+  color: black;
+  border-bottom: 3px solid black;
+}
+
+.DesktopMenuListItem::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  background-color: black;
+  bottom: -3px;
+  left: 0;
+  transform: scaleX(0);
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.DesktopMenuListItem:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.desktopbtn {
+  background: #fff;
+  color: #000;
+  border: none;
+  display: flex;
+  font-family: Franklin Gothic Medium, Arial Narrow, Arial, sans-serif;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  padding: 0 .5rem;
+  border-radius: 20px;
+}
+
+.Desktopbtnimg {
+  height: 16px;
+  object-fit: cover;
+  width: 16px;
+  margin: 7px;
+}
+
+.desktopbtn:hover {
+  border-bottom: 3px solid black;
+}
+
+.Mobmenuimg {
+  display: none;
+  object-fit: cover;
+  height: 1.8rem;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.MobMenu {
+  position: absolute;
+  top: 4rem;
+  right: 2rem;
+  z-index: 2;
+  display: none;
+  flex-direction: column;
+  padding: 0.5rem;
+  min-width: 15rem;
+  background-color: #4277eb;
+  border-radius: 20px;
+}
+
+.MobMenu.show {
+  display: flex;
+}
+
+.MobMenuListItem {
+  color: rgb(0, 0, 0);
+  padding: 0.5rem 2rem;
+  margin: 0.25rem;
+  background-color: rgb(255, 247, 247);
+  text-align: center;
+  cursor: pointer;
+  font-weight: 500;
+  border-radius: 50px;
+}
+
+@media screen and (max-width: 768px) {
+
+  .DesktopMenu,
+  .desktopbtn {
+    display: none;
+  }
+
+  .Mobmenuimg {
+    display: block;
+  }
+}
+
+.active .DesktopMenuListItem,
+.active .MobMenuListItem {
+  color: black;
+  border-bottom: 3px solid black;
 }
