@@ -5,7 +5,7 @@ import Footer from './Components/Footer/Footer'
 import About from './Components/About/About'
 import Uses from './Components/Uses/Uses'
 import { useEffect, useState } from 'react'
-
+ 
 function App() {
   const [hash, setHash] = useState(window.location.hash);
 
