@@ -4,7 +4,7 @@ import contact from '../../assests/contact.png';
 import Mobmenu from '../../assests/Mobmenu.png';
 import './Navbar.css';
 
-function Navbar() {
+function Nvbar() {
   const [showMenu, setShowMenu] = useState(false);
 
   const handleScroll = (id) => {
@@ -45,4 +45,4 @@ function Navbar() {
   
 }
 
-export default Navbar;
+export default Nvbar;

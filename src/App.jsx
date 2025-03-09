@@ -1,6 +1,6 @@
 import './App.css'
 import CurrencyConverter from './Components/Converter/CurrencyConverter'
-import Navbar from './Components/Navbar/navbar'
+import Navbar from './Components/Navbar/Nvbar'
 import Footer from './Components/Footer/Footer'
 import About from './Components/About/Abut'
 import Uses from './Components/Uses/Uses'
