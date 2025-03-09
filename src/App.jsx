@@ -1,8 +1,8 @@
 import './App.css'
 import CurrencyConverter from './Components/Converter/CurrencyConverter'
-import Navbar from './Components/Navbar/Nvbar'
+import Nvbar from './Components/Navbar/Nvbar'
 import Footer from './Components/Footer/Footer'
-import About from './Components/About/Abut'
+import Abut from './Components/About/Abut'
 import Uses from './Components/Uses/Uses'
 import { useEffect, useState } from 'react'
  
@@ -24,7 +24,7 @@ function App() {
   const renderComponent = () => {
     switch (hash) {
       case '#/about':
-        return <About />;
+        return <Abut />;
       case '#/uses':
         return <Uses />;
       default:
@@ -34,7 +34,7 @@ function App() {
 
   return (
     <div className="app-container">
-      <Navbar />
+      <Nvbar />
       <div className="app-content">
         {renderComponent()}
       </div>
