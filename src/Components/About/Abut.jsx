@@ -1,7 +1,7 @@
 import React from 'react';
 import './About.css';
 
-function About() {
+function Abut() {
     return (
         <div className="about-converter">
             <div className="inner-container">
@@ -35,4 +35,4 @@ function About() {
     );
 }
 
-export default About;
+export default Abut;
