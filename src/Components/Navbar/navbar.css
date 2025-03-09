@@ -119,12 +119,9 @@
 }
 
 @media screen and (max-width: 768px) {
-
-  .DesktopMenu,
-  .desktopbtn {
+  .DesktopMenu, .desktopbtn {
     display: none;
   }
-
   .Mobmenuimg {
     display: block;
   }
