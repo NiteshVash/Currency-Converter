@@ -1,12 +1,26 @@
 /* Currency Converter Styling to Match Portfolio */
+
+.app-content {
+  width: 100vw;
+  max-width: 85rem;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  margin: 0 auto;
+  padding: 1rem;
+
+}
+
+
+
+
 .currency-converter {
-  width: 100%;
+  width: 100vw;
   max-width: 35rem;
   margin: 3rem auto;
-  background: #ffffff; 
+  background: #ffffff;
   padding: 20px;
   border-radius: 12px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  /* box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); */
   color: #292929;
   text-align: center;
   font-family: 'Poppins', sans-serif;
@@ -107,8 +121,12 @@ h2 {
 }
 
 .converter-discription-c1 h1 {
+  margin-bottom: 10px;
+}
+
+.h1 {
   font-size: 2rem;
-  padding-top: 4px;
+  padding-top: 8px;
   color: #4277eb;
 }
 

@@ -5,19 +5,18 @@
   text-decoration: none;
   background: transparent;
 }
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  text-decoration: none;
+  background: transparent;
+  /* color: black; */
+}
 
 body {
   background: rgb(255, 255, 255);
   color: rgb(255, 255, 255); /* Change text color to black */
+  overflow: hidden;
   overflow-y: scroll;
-  font-family: 'Poppins', sans-serif;
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-}
-
-#root {
-  display: flex;
-  flex-direction: column;
-  flex: 1;
 }

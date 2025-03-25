@@ -1,7 +1,7 @@
 .Navbar {
   height: 3rem;
   width: 100vw;
-  max-width: 75rem;
+  max-width: 85rem;
   margin: 0 auto;
   padding: 1rem 2rem;
   display: flex;
@@ -14,6 +14,17 @@
   border-top-right-radius: 8px;
   background-color: #4277eb;
   z-index: 3;
+}
+
+.DesktopMenuListItem {
+  cursor: pointer;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+.DesktopMenuListItem.active {
+  color: white; /* Change color for active item */
+  border-bottom: 3px solid white; /* Underline for active item */
 }
 
 .Logo {
@@ -36,8 +47,8 @@
 }
 
 .DesktopMenuListItem:hover {
-  color: black;
-  border-bottom: 3px solid black;
+  color: rgb(255, 255, 255);
+  border-bottom: 3px solid rgb(255, 255, 255);
 }
 
 .DesktopMenuListItem::after {
@@ -49,14 +60,11 @@
   bottom: -3px;
   left: 0;
   transform: scaleX(0);
-  transform-origin: bottom right;
-  transition: transform 0.25s ease-out;
+  /* transform-origin: bottom right;
+  transition: transform 0.25s ease-out; */
 }
 
-.DesktopMenuListItem:hover::after {
-  transform: scaleX(1);
-  transform-origin: bottom left;
-}
+
 
 .desktopbtn {
   background: #fff;

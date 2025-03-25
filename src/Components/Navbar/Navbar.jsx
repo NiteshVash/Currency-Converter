@@ -24,9 +24,9 @@ function Navbar() {
       </a>
 
       <div className="DesktopMenu">
-        <div className="DesktopMenuListItem" onClick={() => navigateTo('#/')}>Home</div>
-        <div className="DesktopMenuListItem" onClick={() => navigateTo('#/about')}>About</div>
-        <div className="DesktopMenuListItem" onClick={() => navigateTo('#/uses')}>Uses</div>
+        <div className="DesktopMenuListItem" onClick={() => navigateTo('/')}>Home</div>
+        <div className="DesktopMenuListItem" onClick={() => navigateTo('/about')}>About</div>
+        <div className="DesktopMenuListItem" onClick={() => navigateTo('/uses')}>Uses</div>
       </div>
 
       <button className='desktopbtn' onClick={() => handleScroll('Contact')}>
@@ -36,9 +36,9 @@ function Navbar() {
       <img src={Mobmenu} alt="Menu" className='Mobmenuimg' onClick={() => setShowMenu(!showMenu)} />
 
       <div className={`MobMenu ${showMenu ? 'show' : ''}`}>
-        <div className="MobMenuListItem" onClick={() => navigateTo('#/')}>Home</div>
-        <div className="MobMenuListItem" onClick={() => navigateTo('#/about')}>About</div>
-        <div className="MobMenuListItem" onClick={() => navigateTo('#/uses')}>Uses</div>
+        <div className="MobMenuListItem" onClick={() => navigateTo('/')}>Home</div>
+        <div className="MobMenuListItem" onClick={() => navigateTo('/about')}>About</div>
+        <div className="MobMenuListItem" onClick={() => navigateTo('/uses')}>Uses</div>
       </div>
     </nav>
   );
