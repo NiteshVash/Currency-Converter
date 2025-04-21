@@ -1,0 +1,105 @@
+.Contact {
+    color: black;
+    width: 100vw;
+    max-width: 85rem; /* Updated max-width */
+    background-color: rgb(255, 255, 255);
+    margin: 0 auto;
+    min-height: 100vh; /* Ensures it takes full height */
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 3rem 2rem; /* Added better padding */
+  }
+  
+  .Contactpagetitle {
+    font-size: 2rem;
+    font-weight: 700;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    padding: 10px;
+  }
+  
+  .contactdesc {
+    font-size: 1rem;
+    font-weight: 400;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    margin-bottom: 1rem;
+  }
+  
+  .contactform {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 500px;
+  }
+  
+  .name,
+  .gmail,
+  .msg {
+    width: 100%; /* Ensures full width */
+    border: none;
+    background-color: rgb(238, 238, 238);
+    color: rgb(0, 0, 0);
+    padding: 12px;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+  }
+  
+  .msg {
+    resize: none; /* Prevents resizing for better layout */
+  }
+  
+  .submit {
+    width: 100%; /* Full width on small screens */
+    background-color: black;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .submit:hover {
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+  }
+  
+  /* --- Responsive Design for Tablets --- */
+  @media screen and (max-width: 768px) {
+    .Contact {
+        padding: 2rem;
+    }
+  
+    .contactform {
+        max-width: 400px;
+    }
+  }
+  
+  /* --- Responsive Design for Mobile Phones --- */
+  @media screen and (max-width: 480px) {
+    .Contact {
+        padding: 1.5rem;
+    }
+  
+    .contactform {
+        max-width: 100%;
+    }
+  
+    .name, .gmail, .msg {
+        font-size: 0.9rem;
+        padding: 10px;
+    }
+  
+    .submit {
+        font-size: 0.9rem;
+        padding: 10px;
+    }
+  }
