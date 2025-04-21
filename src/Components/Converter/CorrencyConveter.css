@@ -13,7 +13,7 @@
 
 
 .currency-converter {
-  width: 100vw;
+  /* width: 100vw; */
   max-width: 35rem;
   margin: 3rem auto;
   background: #ffffff;
